@@ -67,7 +67,7 @@ const Navbar = () => {
         {/* Logo + Name + Hire Me */}
         <div className="flex items-center gap-3">
           <Link to="home" smooth={true} duration={500} offset={-70} className="flex items-center gap-2 cursor-pointer">
-            <img src={logo} alt="Logo" className="w-20 h-20 rounded-full object-cover" />
+            <img src={logo} alt="Logo" className="w-18 h-12 rounded-full object-cover" />
           
           </Link>
 

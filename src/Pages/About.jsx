@@ -20,7 +20,7 @@ const About = () => {
         {/* Right - Text Content */}
         <div className="md:w-1/2 w-full text-center md:text-left">
         
-          <p className="text-gray-500 mb-4 leading-relaxed">
+          <p className="text-gray-400 mb-4 leading-relaxed">
             I’m{" "}
             <span className="font-semibold text-emerald-500">
               Bijoy Kumar Das Lipon
@@ -28,7 +28,7 @@ const About = () => {
             , a passionate full stack web developer who loves writing clean,
             scalable code and building seamless user experiences.
           </p>
-          <p className="text-gray-500 mb-4 leading-relaxed">
+          <p className="text-gray-400 mb-4 leading-relaxed">
             My main stack is{" "}
             <span className="font-medium text-indigo-500">
               MongoDB, Express.js, React, and Node.js
@@ -36,7 +36,7 @@ const About = () => {
             . I enjoy turning complex problems into elegant solutions, and I’m
             always eager to learn new technologies.
           </p>
-          <p className="text-gray-500 leading-relaxed">
+          <p className="text-gray-400 leading-relaxed">
             Whether it’s front-end interaction or back-end logic — I enjoy both
             sides of development and love collaborating on meaningful projects
             that make an impact.

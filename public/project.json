@@ -1,0 +1,97 @@
+[
+  {
+    "id": "toremate",
+    "title": "TourMate",
+    "description": "A travel planning web app to help users find and book tours, view detailed itineraries, and get personalized recommendations.",
+    "features": [
+      "User authentication with Firebase",
+      "Search and filter tours by location and date",
+      "Interactive maps with Google Maps integration",
+      "Booking system with real-time availability",
+      "User reviews and ratings",
+      "Responsive design with Tailwind CSS"
+    ],
+    "tags": ["React", "Firebase", "Tailwind CSS", "Google Maps API", "Node.js", "Express"],
+    "images": [
+      "https://i.ibb.co/cSJG4bNM/img21.png",
+      "https://i.ibb.co/qM28NBf0/img22.png",
+      "https://i.ibb.co/hRBvC9JL/img23.png"
+    ],
+    "liveLink": "https://package-code.web.app/",
+    "githubLink": "https://github.com/Bijoydas2/Tourism-client-side",
+    "techStack": ["React", "Tailwind", "Firebase", "Node.js", "Express", "MongoDB"],
+    "challenges": [
+      "Integrating Google Maps API with custom markers and routes.",
+      "Implementing a robust booking system with real-time updates.",
+      "Ensuring mobile responsiveness across multiple devices."
+    ],
+    "futurePlans": [
+      "Add multi-language support.",
+      "Implement social media sharing features.",
+      "Develop a mobile app version using React Native."
+    ]
+  },
+  {
+    "id": "recipe-master",
+    "title": "Recipe App",
+    "description": "A full-stack recipe management app to browse, add, update and delete recipes with user authentication.",
+    "features": [
+      "User login/signup with Firebase Authentication",
+      "Add, edit, delete recipes",
+      "Responsive design with Tailwind CSS",
+      "REST API backend with Node.js and Express",
+      "Data storage using MongoDB",
+      "Real-time data validation and authorization"
+    ],
+    "tags": ["React", "Tailwind", "Firebase", "Node.js", "Express", "MongoDB"],
+    "images": [
+      "https://i.ibb.co/S4DnHb1v/img11.png",
+      "https://i.ibb.co/LzzP6J1N/img2.png",
+      "https://i.ibb.co/dJzZcthq/img3.png"
+    ],
+    "liveLink": "https://recipe-book-app-auth.web.app/",
+    "githubLink": "https://github.com/Bijoydas2/recipe-app-client",
+    "techStack": ["React", "Tailwind", "Firebase", "Node.js", "Express", "MongoDB"],
+    "challenges": [
+      "Handling backend",
+      "Handling image uploads without a third-party service."
+    ],
+    "futurePlans": [
+      "Add recipe ratings and reviews.",
+      "Implement social login (Google, GitHub).",
+      "Enable image cropping before upload."
+    ]
+  },
+   {
+    "id": "doctor-booking",
+    "title": "Doctor Booking App",
+    "description": "A full-stack web application where patients can browse doctors by specialty, check availability, and book appointments in real-time.",
+    "features": [
+      "User registration and login with Firebase Authentication",
+      "Doctor listing with filtering by specialty and location",
+      "Real-time booking system with date and time selection",
+      "Admin panel to manage doctors, bookings, and users",
+      "Email notifications for appointment confirmation",
+      "Fully responsive and mobile-friendly design"
+    ],
+    "tags": ["React", "Firebase", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+    "images": [
+      "https://i.ibb.co/jZgdm70m/img31.png",
+      "https://i.ibb.co/dwtzJnb9/32.png",
+      "https://i.ibb.co/dsY4PqKp/img33.png"
+    ],
+    "liveLink": "https://stalwart-scone-7d25c7.netlify.app/",
+    "githubLink": "https://github.com/Bijoydas2/Doctor-booking",
+    "techStack": ["React", "Firebase", "Tailwind", "Node.js", "Express", "MongoDB"],
+    "challenges": [
+      "Designing a real-time booking system with availability checks",
+      "Managing time slots dynamically across different doctors",
+      "Handling user roles (admin, patient, doctor) with proper access control"
+    ],
+    "futurePlans": [
+      "Integrate video consultation (Zoom API or Jitsi)",
+      "Add payment gateway for premium bookings",
+      "Implement prescription sharing and appointment history"
+    ]
+  }
+]

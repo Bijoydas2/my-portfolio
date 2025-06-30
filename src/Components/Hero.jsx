@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-11/12 max-w-7xl mx-auto px-6 min-h-screen flex flex-col md:flex-row items-center justify-center gap-12"
+      className="w-11/12 max-w-7xl mx-auto px-6 mt-20 lg:mt-0 md:mt-0 min-h-screen flex flex-col md:flex-row items-center justify-center gap-12"
     >
       {/* Left content */}
       <div className="flex-1 text-center md:text-left">
@@ -29,7 +29,7 @@ const Hero = () => {
         </p>
 
         {/* Description */}
-        <p className="text-gray-500 mb-6 max-w-md mx-auto md:mx-0 leading-relaxed">
+        <p className="text-gray-400 mb-6 max-w-md mx-auto md:mx-0 leading-relaxed">
           Passionate developer focused on building performant and user-friendly web applications.
           Experienced in React, Node.js, and MongoDB.
         </p>

@@ -24,7 +24,7 @@ const skillsData = [
   { title: "React.js", icon: <FaReact className="text-[#61DAFB]" /> },
   { title: "Node.js", icon: <FaNodeJs className="text-[#339933]" /> },
   { title: "MongoDB", icon: <FaDatabase className="text-[#47A248]" /> },
-  { title: "GitHub", icon: <FaGithub className="text-[#181717]" /> },
+  { title: "GitHub", icon: <FaGithub className="text-[#9CA3AF]" /> },
   { title: "Tailwind CSS", icon: <FaWind className="text-[#38B2AC]" /> },   // alternative
   { title: "Firebase", icon: <FaBolt className="text-[#FFCA28]" /> },
   { title: "Figma", icon: <FaFigma className="text-[#F24E1E]" /> },
@@ -50,7 +50,7 @@ const Skills = () => {
               title={title}
             >
               <div className="text-4xl">{icon}</div>
-              <p className="text-gray-700 font-medium">{title}</p>
+              <p className="text-gray-400 font-medium">{title}</p>
             </div>
           ))}
         </div>

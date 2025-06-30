@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const linkClass = "cursor-pointer text-gray-700 hover:text-indigo-600 transition";
@@ -63,16 +64,15 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Logo */}
-        <Link
-          to="home"
-          smooth={true}
-          duration={500}
-          offset={-70}
-          className="btn btn-ghost normal-case text-xl font-bold text-indigo-500 cursor-pointer"
-        >
-          Bijoy Das
-        </Link>
+        {/* Logo + Name + Hire Me */}
+        <div className="flex items-center gap-3">
+          <Link to="home" smooth={true} duration={500} offset={-70} className="flex items-center gap-2 cursor-pointer">
+            <img src={logo} alt="Logo" className="w-20 h-20 rounded-full object-cover" />
+          
+          </Link>
+
+          
+        </div>
       </div>
 
       {/* Desktop Menu */}
@@ -80,8 +80,8 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
 
-      {/* Resume button */}
-      <div className="navbar-end lg:flex">
+      {/* Resume Button */}
+      <div className="navbar-end">
         <a
           href="/resume.pdf"
           download

@@ -1,45 +1,46 @@
 import React from "react";
-import { NavLink } from "react-router";
-
+import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const activeClass = "text-indigo-600 font-semibold";
-  const normalClass = "text-gray-700 hover:text-indigo-600 transition";
-  const links=<>
-            <li>
-              <NavLink to="/" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/skills" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
-                Skills
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/education" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
-                Education
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
-                Projects
-              </NavLink>
-            </li>
-            
-            <li>
-              <NavLink to="/contact" className={({ isActive }) => (isActive ? activeClass : normalClass)}>
-                Contact
-              </NavLink>
-            </li>
-  </>
+  const linkClass = "cursor-pointer text-gray-700 hover:text-indigo-600 transition";
+
+  const links = (
+    <>
+      <li>
+        <Link to="home" smooth={true} duration={500} offset={-70} className={linkClass}>
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link to="about" smooth={true} duration={500} offset={-70} className={linkClass}>
+          About
+        </Link>
+      </li>
+      <li>
+        <Link to="skills" smooth={true} duration={500} offset={-70} className={linkClass}>
+          Skills
+        </Link>
+      </li>
+      <li>
+        <Link to="education" smooth={true} duration={500} offset={-70} className={linkClass}>
+          Education
+        </Link>
+      </li>
+      <li>
+        <Link to="projects" smooth={true} duration={500} offset={-70} className={linkClass}>
+          Projects
+        </Link>
+      </li>
+      <li>
+        <Link to="contact" smooth={true} duration={500} offset={-70} className={linkClass}>
+          Contact
+        </Link>
+      </li>
+    </>
+  );
+
   return (
-    <div className="navbar bg-indigo-50 shadow-md sticky  top-0 z-50 px-4">
+    <div className="navbar bg-indigo-50 shadow-md sticky top-0 z-50 px-4">
       <div className="navbar-start">
         {/* Mobile dropdown */}
         <div className="dropdown">
@@ -58,29 +59,33 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-           {links}
+            {links}
           </ul>
         </div>
 
         {/* Logo */}
-        <NavLink to="/" className="btn btn-ghost normal-case text-xl font-bold text-indigo-500">
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          offset={-70}
+          className="btn btn-ghost normal-case text-xl font-bold text-indigo-500 cursor-pointer"
+        >
           Bijoy Das
-        </NavLink>
+        </Link>
       </div>
 
       {/* Desktop Menu */}
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {links}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
 
       {/* Resume button */}
       <div className="navbar-end lg:flex">
         <a
-           href="/resume.pdf"
-    download
-    className="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white"
+          href="/resume.pdf"
+          download
+          className="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white"
         >
           Resume
         </a>

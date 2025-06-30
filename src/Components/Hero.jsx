@@ -1,26 +1,25 @@
 import React from "react";
 import { FaGithub, FaFacebookF } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
-import profile from '../assets/profile.png'
+import profile from "../assets/profile.png";
 
 const Hero = () => {
   return (
-    <section className="w-11/12 mx-auto px-6 mt-16 flex flex-col md:flex-row items-center md:items-start gap-12">
+    <section
+      id="home"
+      className="w-11/12 max-w-7xl mx-auto px-6 min-h-screen flex flex-col md:flex-row items-center justify-center gap-12"
+    >
       {/* Left content */}
       <div className="flex-1 text-center md:text-left">
-        <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold text-indigo-600 mb-4">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-600 mb-4">
           Bijoy Kumar Das Lipon
         </h1>
 
-        {/* Typewriter Effect for job titles */}
-        <p className="text-emerald-500 text-xl font-semibold mb-3 h-8">
+        {/* Typewriter */}
+        <p className="text-emerald-500 text-xl font-semibold mb-3 min-h-[32px]">
           <Typewriter
-            words={[
-              "Mern Stack Developer",
-              "React Enthusiast",
-              
-            ]}
-            loop={0} 
+            words={["MERN Stack Developer", "React Enthusiast"]}
+            loop={0}
             cursor
             cursorStyle="|"
             typeSpeed={70}
@@ -29,15 +28,16 @@ const Hero = () => {
           />
         </p>
 
-        <p className="text-gray-400 mb-6 max-w-md">
+        {/* Description */}
+        <p className="text-gray-500 mb-6 max-w-md mx-auto md:mx-0 leading-relaxed">
           Passionate developer focused on building performant and user-friendly web applications.
           Experienced in React, Node.js, and MongoDB.
         </p>
 
-        {/* Social links */}
+        {/* Social Links */}
         <div className="flex justify-center md:justify-start space-x-6 mb-6 text-2xl">
           <a
-            href="https://facebook.com/yourprofile"
+            href="https://www.facebook.com/bijoy.d.l.2024"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -46,32 +46,31 @@ const Hero = () => {
             <FaFacebookF />
           </a>
           <a
-            href="https://github.com/yourprofile"
+            href="https://github.com/Bijoydas2"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className=" hover:text-gray-400 transition"
+            className="hover:text-gray-400 transition"
           >
             <FaGithub />
           </a>
         </div>
 
-        {/* Resume button */}
-         <div className="flex space-x-4">
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
           <a
             href="/resume.pdf"
             download
-            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md font-medium transition"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md font-medium transition"
           >
             Download Resume
           </a>
-
-          <button
-          
-            className="inline-block bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-md font-medium transition"
+          <a
+            href="#contact"
+            className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-md font-medium transition"
           >
             Hire Me
-          </button>
+          </a>
         </div>
       </div>
 
@@ -80,7 +79,7 @@ const Hero = () => {
         <img
           src={profile}
           alt="Bijoy Das"
-          className="w-64 h-64 rounded-full object-cover shadow-lg"
+          className="w-64 h-64 md:w-72 md:h-72 rounded-full object-cover shadow-lg"
         />
       </div>
     </section>

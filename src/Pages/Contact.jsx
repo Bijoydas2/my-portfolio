@@ -35,41 +35,43 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="w-11/12 max-w-7xl mx-auto py-20">
-      <h2 className="text-4xl font-bold text-center mb-12 text-indigo-600">Contact</h2>
+    <section id="contact" className="w-11/12 max-w-7xl mx-auto py-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-indigo-600">
+        Contact
+      </h2>
 
-      <div className="grid md:grid-cols-2 gap-8 border border-indigo-200 rounded-xl p-8 shadow-lg">
+      <div className="flex flex-col md:flex-row gap-8 border border-indigo-200 rounded-xl p-6 md:p-8 shadow-lg ">
         {/* Contact Info */}
-        <div className="bg-indigo-100 border border-indigo-300 rounded-lg p-6 flex flex-col justify-between">
+        <div className="bg-indigo-100 border border-indigo-300 rounded-lg p-6 flex flex-col justify-between flex-1">
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-indigo-700">Contact Information</h3>
+            <h3 className="text-xl font-semibold mb-5 text-indigo-700">
+              Contact Information
+            </h3>
 
-            <div className="flex items-center gap-3 mb-3 text-indigo-700">
-              <FaEnvelope className="text-indigo-600" />
-              <a href="mailto:bijoydas5680@gmail.com" className="hover:underline">
-                bijoydas5680@gmail.com
-              </a>
-            </div>
-
-            <div className="flex items-center gap-3 mb-3 text-indigo-700">
-              <FaPhoneAlt className="text-indigo-600" />
-              <a href="tel:+8801704689521" className="hover:underline">
-                +8801704689521
-              </a>
-            </div>
-
-            <div className="flex items-center gap-3 mb-6 text-indigo-700">
-              <FaMapMarkerAlt className="text-indigo-600" />
-              <p>Moulvibazar, Sylhet</p>
+            <div className="space-y-4 text-indigo-700">
+              <div className="flex items-center gap-3">
+                <FaEnvelope className="text-indigo-600" />
+                <a href="mailto:bijoydas5680@gmail.com" className="hover:underline">
+                  bijoydas5680@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaPhoneAlt className="text-indigo-600" />
+                <a href="tel:+8801704689521" className="hover:underline">
+                  +8801704689521
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaMapMarkerAlt className="text-indigo-600" />
+                <p>Moulvibazar, Sylhet</p>
+              </div>
             </div>
           </div>
 
-        
-
           {/* Social Links */}
-          <div>
+          <div className="mt-8">
             <h4 className="text-lg font-semibold mb-3 text-indigo-700">Connect with me</h4>
-            <div className="flex gap-4 text-indigo-600 text-xl">
+            <div className="flex flex-wrap gap-4 text-indigo-600 text-xl">
               <a
                 href="https://www.facebook.com/bijoy.d.l.2024"
                 target="_blank"
@@ -105,7 +107,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={sendEmail}
-          className="bg-indigo-100 border border-indigo-300 rounded-lg p-6 flex flex-col gap-4"
+          className="bg-indigo-100 border border-indigo-300 rounded-lg p-6 flex flex-col gap-4 flex-1"
         >
           <div className="flex items-center gap-3">
             <FaUser className="text-indigo-600" />

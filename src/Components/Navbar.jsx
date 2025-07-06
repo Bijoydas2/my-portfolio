@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <Link to="home" smooth={true} duration={500} offset={-70} className="flex items-center gap-2 cursor-pointer">
             <img src={logo} alt="Logo" className="w-18 h-12 rounded-full object-cover" />
-          
+                 <span className="text-2xl font-bold text-indigo-500">Bijoy.</span>
           </Link>
 
           

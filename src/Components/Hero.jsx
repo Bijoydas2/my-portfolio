@@ -11,6 +11,7 @@ const Hero = () => {
     >
       {/* Left content */}
       <div className="flex-1 text-center md:text-left">
+        {/* Name */}
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-600 mb-4">
           Bijoy Kumar Das Lipon
         </h1>
@@ -59,8 +60,9 @@ const Hero = () => {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
           <a
-            href="/resume.pdf"
-            download
+            href="https://drive.google.com/uc?export=download&id=1skVydIMRI4JjTuN-Zisx4EFB-01EoWGC"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md font-medium transition"
           >
             Download Resume

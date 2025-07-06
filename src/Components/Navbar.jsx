@@ -42,8 +42,9 @@ const Navbar = () => {
 
   return (
     <div className="navbar bg-indigo-50 shadow-md sticky top-0 z-50 px-4">
+      {/* Navbar Start */}
       <div className="navbar-start">
-        {/* Mobile dropdown */}
+        {/* Mobile Dropdown */}
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -64,27 +65,26 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Logo + Name + Hire Me */}
+        {/* Logo + Name */}
         <div className="flex items-center gap-3">
           <Link to="home" smooth={true} duration={500} offset={-70} className="flex items-center gap-2 cursor-pointer">
-            <img src={logo} alt="Logo" className="w-18 h-12 rounded-full object-cover" />
-                 <span className="text-2xl font-bold text-indigo-500">Bijoy.</span>
+            <img src={logo} alt="Logo" className="w-12 h-12 rounded-full object-cover" />
+            <span className="text-2xl font-bold text-indigo-500">Bijoy.</span>
           </Link>
-
-          
         </div>
       </div>
 
-      {/* Desktop Menu */}
+      {/* Navbar Center (Desktop Menu) */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
 
-      {/* Resume Button */}
+      {/* Navbar End (Resume Button) */}
       <div className="navbar-end">
         <a
-          href="/resume.pdf"
-          download
+          href="https://drive.google.com/uc?export=download&id=1skVydIMRI4JjTuN-Zisx4EFB-01EoWGC"
+          target="_blank"
+           rel="noopener noreferrer"
           className="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white"
         >
           Resume
